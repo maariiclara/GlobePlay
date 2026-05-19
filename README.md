@@ -83,7 +83,7 @@ Depois, abra o arquivo `index.html` no navegador.
 
 ## 🌐 Acesse o Projeto
 
-> [Clique aqui para visualizar o site](https://github.com/maariiclara/GlobePlay)
+> [Clique aqui para visualizar o site](https://github.com/maariiclara/GlobePlay/)
 
 ---
 
