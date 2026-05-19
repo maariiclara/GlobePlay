@@ -1,0 +1,264 @@
+*{margin:0;
+    padding:0;
+    } /* Não deixar que os itens da página atinjam as estremidades */
+    
+body{
+    background-color: #1d1d1d; /* #1d1d1d rgb(27, 25, 25) cor do fundo */ 
+    font-family: 'Times New Roman', Times, serif; /* tipo da fonte */ 
+    font-size: 20px; /* tamanho da fonte */ 
+    font-style: normal; /* estilo da fonte */ 
+}
+   
+header{
+    background-color: black;
+}
+    
+header img{ /* Definições da imagem que estão dentro do cabeçalho */
+    width: 250px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    margin: 10px; /* Margem da imagem */
+}
+
+#menu ul{ /* ID para lista */
+    list-style: none; /* Sem nenhum estilo na lista, tira os pontos */
+    margin-right: 260px;
+    align-items: center;
+}
+
+#menu ul li i{ 
+    margin-right: 5px; /* Adiciona um espaçamento à direita do ícone */
+}
+
+#menu ul li { 
+    display: flex; /* Transforma o li em um container flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-top: -50px;
+  }
+    
+#menu li{
+    position: relative; /* Posição relativa do item da lista */
+}
+    
+#menu li a{ 
+    color: white; /* Cor do texto do menu */
+    text-decoration: none; /* Sem estilo no texto */
+    padding: 10px 10px; /* Espaçamento entre os textos no Menu */
+    display: block; /* Opções do menu bloqueadas na posição atual */
+}
+    
+#menu li a:hover{ /* trocar a cor do fundo, quando passar o mouse */
+    background: #ff5055; /* Fundo do efeito */
+    color: #fff; /* Cor do texto no fundo */
+    text-shadow: 0px 0px 5px black; /* Sombra do efeito */
+}
+    
+#menu li ul{
+    position: absolute;
+    top: 25px; /* Espaçamento do topo */
+    left: 0; /* Espaçamento da esquerda */
+    background-color: #fff;
+    display: none;
+}
+    
+menu li:hover ul, #menu li.over ul{
+    display: block; /* Durante o efeito não moverá o menu */
+}
+    
+header, #menu, #menu ul{
+    display: flex;
+}
+    
+footer{
+    background-color: black;
+    display: flex; /* Utiliza flexbox para organizar os elementos */
+    justify-content: space-between; /* flex-end Alinha os elementos para o final da linha */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    padding: 10px; /* Adiciona um espaçamento interno */
+}
+    
+footer img{
+    width: 250px;
+    height: 100px;
+}
+    
+footer p{
+    color: white;
+    margin-right: 20px; /* Espaçamento entre o texto e a imagem */
+    font-family: 'Times New Roman', Times, serif; /* tipo da fonte */ 
+    font-size: 20px; /* tamanho da fonte */ 
+    font-style: normal; /* estilo da fonte */ 
+    text-align: center;
+}
+
+.rodape{
+    text-align: left;
+    margin-left: 15px;
+}
+
+#menu{
+    list-style: none;
+    margin: 0 auto; /* Centraliza horizontalmente o menu */
+    margin-top: 45px; /* Ajusta a margem superior */
+}
+
+.lupa{
+    margin-top: 45px;
+    margin-right: 25px;
+}
+
+.search-box { /* Define o contêiner da barra de pesquisa */
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    margin-top: 60px; /* 60px Define a margem superior */
+    margin-left: 1127px; /* Define a margem direita */
+    transform: translate(-50%, -50%); /* Centraliza o elemento horizontal e verticalmente */
+    background: #1d1d1d; /* Define a cor de fundo */
+    height: 40px; /* 60px Define a altura */
+    border-radius: 40px; /* 50 Arredonda os cantos */
+    padding: 10px; /*10 - 0 Adiciona um espaço interno */
+}
+
+.search-btn { /* Define o botão de busca */
+    color: #ff5055; /*branco Define a cor do texto */
+    float: right; /* Posiciona o elemento à direita */
+    width: 40px; /* 50 Define a largura */
+    height: 40px; /* 50 Define a altura */
+    border-radius: 50%; /* 80px Arredonda os cantos para um formato circular */
+    background: #1d1d1d; /* Define a cor de fundo */
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    transition: 2s; /* Aplica uma transição com duração de 2 segundos */
+}
+
+.search-txt { /* Define o campo de texto para pesquisa */
+    border: none; /* Remove a borda */
+    background: none; /* Remove o fundo */
+    outline: none; /* Remove o contorno ao selecionar o elemento */
+    float: left; /* Posiciona o elemento à esquerda */
+    padding: 0; /* Remove o espaçamento interno */
+    color: white; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    transition: 0.4s; /* Aplica uma transição com duração de 0.4 segundos */
+    line-height: 40px; /* Define a altura da linha do texto */
+    width: 0px; /* 240 10 0 Define a largura inicial, ocultando o campo */
+}
+
+.search-box:hover > .search-txt { /* Estilo aplicado quando o mouse está sobre o elemento .search-box */
+    width: 85px; /* 80 Expande a largura do campo de texto */
+    padding: 2px; /* 2 Adiciona um pouco de padding - espaço top, right, bottom, left - 2= */
+}
+
+.search-box:hover > .search-btn { /* Estilo aplicado quando o mouse está sobre o elemento .search-box */
+    background: white; /* Altera a cor de fundo do botão */
+}
+
+.notification{
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    margin-top: 60px; /* 60px Define a margem superior */
+    margin-left: 1240px; /* Define a margem direita */
+    transform: translate(-50%, -50%); /* Centraliza o elemento horizontal e verticalmente */
+    background: #1d1d1d; /* Define a cor de fundo */
+    height: 40px; /* 60px Define a altura */
+    border-radius: 40px; /* 50 Arredonda os cantos */
+    padding: 10px; /*10 - 0 Adiciona um espaço interno */
+    
+    color: #ff5055; /*branco Define a cor do texto */
+    float: right; /* Posiciona o elemento à direita */
+    width: 40px; /* 50 Define a largura */
+    height: 40px; /* 50 Define a altura */
+    border-radius: 50%; /* 80px Arredonda os cantos para um formato circular */
+    background: #1d1d1d; /* Define a cor de fundo */
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    transition: 2s; /* Aplica uma transição com duração de 2 segundos */
+}
+
+.box-notification{
+    margin-top: 168px;
+    background-color: #342f2f; /* #2a0c36  -- #1d1d1d*/
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-size-adjust: 16px;
+    text-align: center;
+    align-items: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img{
+    width: 150px; /* 50 Define a largura */
+    height: 40px;
+}
+
+.notification:hover .box-notification{
+    visibility: visible;
+    opacity: 1;
+}
+
+.enter{
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    margin-top: 60px; /* 60px Define a margem superior */
+    margin-left: 1310px; /* Define a margem direita */
+    transform: translate(-50%, -50%); /* Centraliza o elemento horizontal e verticalmente */
+    background: #1d1d1d; /* Define a cor de fundo */
+    height: 40px; /* 60px Define a altura */
+    border-radius: 40px; /* 50 Arredonda os cantos */
+    padding: 10px; /*10 - 0 Adiciona um espaço interno */
+    
+    color: #ff5055; /*branco Define a cor do texto */
+    float: right; /* Posiciona o elemento à direita */
+    width: 40px; /* 50 Define a largura */
+    height: 40px; /* 50 Define a altura */
+    border-radius: 50%; /* 80px Arredonda os cantos para um formato circular */
+    background: #1d1d1d; /* Define a cor de fundo */
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    transition: 2s; /* Aplica uma transição com duração de 2 segundos */
+}
+
+.box { /* Define o contêiner da barra de pesquisa */
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    margin-top: 60px; /* 60px Define a margem superior */
+    margin-left: 750px; /* Define a margem direita */
+    transform: translate(-50%, -50%); /* Centraliza o elemento horizontal e verticalmente */
+    background: #1d1d1d; /* Define a cor de fundo */
+    height: 40px; /* 60px Define a altura */
+    border-radius: 40px; /* 50 Arredonda os cantos */
+    padding: 10px; /*10 - 0 Adiciona um espaço interno */
+    width: 560px;
+}
+
+.btn { /* Define o botão de busca */
+    color: #ff5055; /* #ff5055 branco Define a cor do texto */
+    float: right; /* Posiciona o elemento à direita */
+    width: 40px; /* 50 Define a largura */
+    height: 40px; /* 50 Define a altura */
+    border-radius: 50%; /* 80px Arredonda os cantos para um formato circular */
+    background: white; /* Define a cor de fundo */
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    transition: 2s; /* Aplica uma transição com duração de 2 segundos */
+}
+
+.txt { /* Define o campo de texto para pesquisa */
+    border: none; /* Remove a borda */
+    background: none; /* Remove o fundo */
+    outline: none; /* Remove o contorno ao selecionar o elemento */
+    float: left; /* Posiciona o elemento à esquerda */
+    padding: 0; /* Remove o espaçamento interno */
+    color: white; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    line-height: 40px; /* Define a altura da linha do texto */
+    width: 0px; /* 240 10 0 Define a largura inicial, ocultando o campo */
+    width: 520px; /* Define a largura inicial do campo de texto */
+    flex: 1;
+}
+
+/* PARTE PARA SEREM EDITADAS INDIVIDUALMENTE */

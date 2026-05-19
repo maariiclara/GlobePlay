@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, rgb(54, 50, 50), rgb(196, 4, 4));
+    text-align: center;
+}
+
+.img{
+    width: 150px;
+    height: 50px;
+    align-items: center;
+}
+
+div{
+    background-color: rgb(49, 45, 45); /*cor da div e transparencia*/
+    position: absolute; /*para a parte preta só ocupar as partes do elemento*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px; /*distancia entre os elementos e a borda*/
+    border-radius: 50px; /*arredondar as bordas*/
+    color: white;
+}
+input{
+    padding: 15px;
+    border: none; /*tirar borda*/
+    font-size: 15px;
+}
+
+button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 15px;
+}
+
+button:hover{ /*alterações quando passa o mouse*/
+    background-color: deepskyblue;
+    cursor: pointer; /*muda o mouse*/
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+}

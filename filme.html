@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="cssgabi/estilofilme.css">
+    <script src="https://kit.fontawesome.com/eacdfb59f8.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <!--CABEÇALHO-->
+        <header> 
+            <img src="imggabi/GlobePlay.png" alt="Logo GlobePlay" >
+            <nav id="menu"> 
+                <ul>
+                    <li> 
+                        <i class="fa-solid fa-house" style="color: #ff5055;"> </i>
+                        <a href="index.html" > Início </a> 
+                    </li> 
+                    <li> 
+                        <i class="fa-solid fa-video" style="color: #ff5055;"></i>
+                        <a href="aovivo.html" > Agora na TV </a> 
+                    </li>
+                    <li> <a href="novela.html" > Novelas </a> </li>
+                    <li> <a href="index_series.html" > Séries </a> </li>
+                    <li> <a href="filme.html" > Filmes </a> </li>
+                    <li> <a href="estrela.html" > Estrela da Casa </a> </li>
+                    <li> <a href="catalogo.html" > Catálogo </a> </li>
+                    <li> <a href="g1.html" > G1 </a> </li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Pesquisar..."> 
+                <a class="search-btn"> 
+                    <i class="fas fa-search"> </i>
+                </a>
+            </div> 
+            <div class="notification">
+                <a>
+                  <i class="fa-solid fa-bell"></i> <!--<i class="fa-regular fa-bell"></i>  <i class="fa-solid fa-bell"></i> -->
+                </a>
+                <div class="box-notification">
+                    <p> Fique atento(a) a todas as nossas notificações </p> <img src="imggabi/GlobePlay.png" class="img" alt="Logo GlobePlay">
+                </div>
+            </div>
+            <div class="enter">
+                <a href="login.html"> 
+                    <i class="fa-solid fa-user" style="color: #ff5055;"></i>
+                </a>
+            </div> 
+        </header>
+
+    <!--CARROSSEL-->
+    <div class="div-slider">
+        <ul class="slides-front">
+          <input type="radio" name="radio-btn" id="img-1" checked="">
+          <li class="slide-container">
+             <div class="slide">
+               <img src="imggabi/carrosel1.jpeg">
+             </div>
+             <div class="nav">
+               <label for="img-3" class="prev">‹</label>
+               <label for="img-2" class="next">›</label>
+             </div>
+          </li>
+      
+          <input type="radio" name="radio-btn" id="img-2">
+          <li class="slide-container">
+              <div class="slide">
+                <img src="imggabi/carrosel2.jpeg">
+              </div>
+          <div class="nav">
+            <label for="img-1" class="prev">‹</label>
+            <label for="img-3" class="next">›</label>
+          </div>
+          </li>
+      
+          <input type="radio" name="radio-btn" id="img-3">
+          <li class="slide-container">
+              <div class="slide">
+                <img src="imggabi/carrosel3.jpeg">
+              </div>
+          <div class="nav">
+            <label for="img-2" class="prev">‹</label>
+            <label for="img-4" class="next">›</label>
+          </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-4">
+          <li class="slide-container">
+              <div class="slide">
+                <img src="imggabi/carrosel4.jpeg">
+              </div>
+          <div class="nav">
+            <label for="img-3" class="prev">‹</label>
+            <label for="img-1" class="next">›</label>
+          </div>
+          </li>
+      
+          <li class="nav-dots">
+            <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+            <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+            <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+            <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+          </li>
+        </ul>
+      </div>
+    <br>
+    <br>
+    <br>
+    
+    <div>
+      <table class="tipofilme"> <!--começa imagens generos-->
+        <td>
+          <h3>Gêneros</h3>
+          <a href="https://globoplay.globo.com/categorias/filmes-de-comedia/">
+            <img src="imggabi/genero1.jpeg" alt="filme comédia" ></a>
+          <a href="https://globoplay.globo.com/categorias/filmes-romanticos/">
+              <img src="imggabi/genero2.jpeg" alt="filme romance" ></a>
+          <a href="https://globoplay.globo.com/categorias/filmes-de-acao/">
+            <img src="imggabi/genero3.jpeg" alt="filme ação" ></a>
+          <a href="https://globoplay.globo.com/categorias/filmes-de-terror/">
+            <img src="imggabi/genero4.jpeg" alt="filme terror" ></a>
+          <!--<a href="https://globoplay.globo.com/categorias/filmes-infantis/">
+              <img src="imggabi/genero5.jpeg" alt="filme infantil" ></a>-->
+          
+        </td>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <table class="outrosfilmes"> <!--começa imagens lançamento-->
+        <td>
+          <h3>Novidades</h3>
+          <img src="imggabi/novidades1.jpg" alt="filme lançamento" >
+          <img src="imggabi/novidades2.jpg" alt="filme lançamento" >
+          <img src="imggabi/novidade3.jpg" alt="filme lançamento" >
+          <img src="imggabi/noviadade5.png" alt="filme lançamento" >
+          <img src="imggabi/noviadade6.png" alt="filme lançamento" >
+          <img src="imggabi/noviadade7.jpg" alt="filme lançamento" >
+           <!--<img src="imggabi/noviadade8.png" alt="filme lançamento" > -->
+          
+        </td>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <table class="outrosfilmes"> <!--começa imagens inspirados em livros-->
+        <td>
+          <h3>Inspirados em livros</h3>
+          <img src="imggabi/inspirados1.jpg" alt="filme inspirado em livro" >
+          <img src="imggabi/novidades2.jpg" alt="filme inspirado em livro" >
+          <img src="imggabi/inspirados2.jpg" alt="filme inspirado em livro" >
+          <img src="imggabi/inspirados4.jpg" alt="filme inspirado em livro" >
+          <img src="imggabi/inspirados5.jpg" alt="filme inspirado em livro" >
+          <img src="imggabi/inspirados6.jpg" alt="filme inspirado em livro" >
+           <!--<img src="imggabi/inspirados7.jpg" alt="filme inspirado em livro" > -->
+        </td>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <table class="outrosfilmes"> <!--começa imagens premiados-->
+        <td>
+          <h3>Filmes premiados</h3>
+          <img src="imggabi/premiados1.jpg" alt="filme premiado" >
+          <img src="imggabi/premiados2.jpg" alt="filme premiado" >
+          <img src="imggabi/premiados3.jpg" alt="filme premiado" >
+          <img src="imggabi/premiados4.jpg" alt="filme premiado" >
+          <img src="imggabi/premiados5.jpg.crdownload.jpg" alt="filme premiado" >
+          <img src="imggabi/premiados6.jpg" alt="filme premiado" >
+           <!--<img src="imggabi/premiados7.jpg" alt="filme premiado" > -->
+        </td>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <table class="tipofilme"> <!--começa imagens lista-->
+        <td>
+          <h3>Cinelists da telecine</h3>
+          <a href="https://globoplay.globo.com/categorias/telecine-top-100-filmes/">
+            <img src="imggabi/cinelist1.jfif" alt="top 100 filmes" ></a>
+          <a href="https://globoplay.globo.com/categorias/telecine-kids/">
+              <img src="imggabi/cinelist2.jpeg" alt="filmes kids" ></a>
+          <a href="https://globoplay.globo.com/categorias/telecine-premiados-e-indicados/">
+            <img src="imggabi/cinelist3.jpeg" alt="filmes premiados e indicados" ></a>
+          <a href="https://globoplay.globo.com/categorias/telecine-filmes-nacionais/">
+            <img src="imggabi/cinelist4.jpeg" alt="filmes nacionais" ></a>
+         <!--<a href="https://globoplay.globo.com/categorias/telecine-baseados-em-historias-reais/">
+               <img src="imggabi/cinelist5.jpeg" alt="baseado em historias reais" ></a> -->
+        </td>
+    </div>
+    <div class="container"> <!--GRID-->
+      <div class="item"><a href="https://www.youtube.com/watch?v=4PC4S9rJlk0">
+        <img src="imggabi/grid1.png" alt="imagem grid" ></a></div>
+      <div class="item"><a href="https://www.youtube.com/watch?v=gO-mX9kE6uk">
+        <img src="imggabi/grid2.png" alt="imagem grid" ></a></div>
+      <div class="item"><a href="https://www.youtube.com/watch?v=6-EiZEiYMCc">
+        <img src="imggabi/grid3.png" alt="imagem grid" ></a></div>
+  </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <table class="outrosfilmes"> <!--começa imagens nacionais-->
+        <td>
+          <h3>Nacionais</h3>
+          <img src="imggabi/nacionais1.jpg" alt="filme nacional" >
+          <img src="imggabi/nacionais2.jpeg" alt="filme nacional" >
+          <img src="imggabi/nacionais3.jpeg" alt="filme nacional" >
+          <img src="imggabi/nacionais4.jpeg" alt="filme nacional" >
+          <img src="imggabi/nacionais5.jpg" alt="filme nacional" >
+         <img src="imggabi/nacionais6.jpg" alt="filme nacional" >
+          <!--<img src="imggabi/nacionais7.jpeg" alt="filme nacional" > -->
+        </td>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <table class="outrosfilmes"> <!--começa imagens infantis-->
+        <td>
+          <h3>Infantil</h3>
+          <img src="imggabi/infantil1.jpg" alt="filme infantil" >
+          <img src="imggabi/infantil2.jpg" alt="filme infantil" >
+          <img src="imggabi/infantil3.jpg" alt="filme infantil" >
+          <img src="imggabi/infantil4.jpg" alt="filme infantil" >
+          <img src="imggabi/infantil5.jpg" alt="filme infantil" >
+          <img src="imggabi/infantil6.jpg" alt="filme infantil" >
+          <!--<img src="imggabi/infantil7.jpg" alt="filme infantil" > -->
+        </td>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <div>
+      <table>
+       ..
+      </table>
+    </div>
+ 
+      <!--RODÁPE-->
+    <footer>
+        <div class="rodape">
+        <ul>
+            <li> <p> © 2024 Globe Comunicação </p> </li>
+            <li> <p> Todos os direitos reservados para a desenvolvedora </p> </li>
+            <li> <p> GABRIELLE </p> </li> 
+        </ul>
+        </div>
+        <div> <img src="imggabi/GlobePlay.png" alt="Logo GlobePlay"> </div>
+        <div class="box">
+            <input class="txt" type="text" name="" placeholder="Escreva Aqui Suas Sugestões..."> 
+            <a class="btn"> 
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div> 
+    </footer>
+</body>
+</html>

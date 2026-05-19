@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img_g1/globe.png"> 
+    <link rel="stylesheet" href="css_g1/estilo_g1.css"> 
+    <script src="https://kit.fontawesome.com/eacdfb59f8.js" crossorigin="anonymous"></script> 
+    <title>GlobePlay</title>
+    <style>
+        .carrossel {
+            position: relative;
+            max-width: 800px; /* Ajuste conforme necessário */
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+        }
+
+        .slide img {
+            width: 100%; /* Imagem ocupa toda a largura do slide */
+            height: auto; /* Mantém a proporção */
+            border: 5px solid black; /* Borda preta ao redor da imagem */
+            border-radius: 15px; /* Bordas arredondadas */
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            font-size: 20px; /* Tamanho menor das setas */
+            cursor: pointer;
+            padding: 5px; /* Espaçamento interno menor */
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body> 
+    <header> 
+        <img src="img_g1/globe.png" alt="Logo GlobePlay">
+        <nav id="menu"> 
+            <ul>
+                <li><i class="fa-solid fa-house" style="color: #ff5055;"></i><a href="index.html">Início</a></li> 
+                <li><i class="fa-solid fa-video" style="color: #ff5055;"></i><a href="aovivo.html">Agora na TV</a></li>
+                <li><a href="novela.html">Novelas</a></li>
+                <li><a href="index_series.html">Séries</a></li>
+                <li><a href="filme.html">Filmes</a></li>
+                <li><a href="estrela.html">Estrela da Casa</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="g1.html">G1</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Pesquisar..."> 
+            <a class="search-btn"><i class="fas fa-search"></i></a>
+        </div> 
+        <div class="notification">
+            <a><i class="fa-solid fa-bell"></i></a>
+            <div class="box-notification">
+                <p>Fique atento(a) a todas as nossas notificações</p>
+                <img src="img_g1/globe.png" class="img" alt="Logo GlobePlay">
+            </div>
+        </div>
+        <div class="enter">
+            <a href="login.html"><i class="fa-solid fa-user" style="color: #ff5055;"></i></a>
+        </div> 
+    </header>
+
+    <!-- Carrossel de Imagens -->
+    <div class="carrossel">
+        <div class="carrossel-texto">Assine já e assista Ao vivo</div>
+        <div class="slides">
+            <div class="slide active">
+                <img src="img_g1/jornal.png" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="img_g1/jornal.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="img_g1/maisvoce.jpg" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="img_g1/malhacao.gif" alt="Imagem 4">
+            </div>
+            <div class="slide">
+                <img src="img_g1/miracu.jpg" alt="Imagem 5">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <ul>
+                <li><p>© 2024 Globe Comunicação</p></li>
+                <li><p>Todos os direitos reservados para a desenvolvedora</p></li>
+                <li><p>Leticia</p></li>
+            </ul>
+        </div>
+        <div><img src="img_g1/globe.png" alt="Logo GlobePlay"></div>
+        <div class="box">
+            <input class="txt" type="text" placeholder="Escreva Aqui Suas Sugestões..."> 
+            <a class="btn"><i class="fa-solid fa-envelope"></i></a>
+        </div> 
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.querySelectorAll(".slide");
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+            
+            slides.forEach(slide => {
+                slide.style.display = "none";  
+            });
+            slides[slideIndex].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
